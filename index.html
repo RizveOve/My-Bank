@@ -11,8 +11,74 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="login-section">
-        <h1>Welcome to my bank</h1>
+
+    <!--Login area-->
+    <div class="login-section container"  id="login-section">
+        <h1 class="text-center welcome-text">Welcome to my bank</h1>
+        <div class="login-form">
+            <h4>Login</h4>
+            <input type="email" name="" id="" placeholder="Enter your email here" class="form-control"> <br>
+            <input type="password" name="" id="" placeholder="Enter your password here" class="form-control"> <br>
+            <button class="btn btn-success" id="submitBtn">Submit</button>
+        </div>
     </div>
+
+    <!--transaction area-->
+    <div class="transaction-section container" id="transactionSection">
+
+        <!--status area-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="status deposit">
+                    <h5>Deposit</h5>
+                    <h2>BDT 00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="status withdraw">
+                    <h5>Withdraw</h5>
+                    <h2>BDT 00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="status balance">
+                    <h5>Balance</h5>
+                    <h2>BDT 15000</h2>
+                </div>
+            </div>
+        </div>
+
+        <!--input area-->
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="depwith-input">
+                    <h4>Deposit</h4>
+                    <input type="number" name="" id="" placeholder="BDT you want to deposit" class="form-control"> <br>
+                    <button type="submit" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="depwith-input">
+                    <h4>Withdraw</h4>
+                    <input type="number" name="" id="" placeholder="BDT you want to withdraw"  class="form-control"> <br>
+                    <button type="submit" class="btn btn-danger">Withdraw</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script>
+      const submitBtn = document.getElementById("submitBtn");
+      submitBtn.addEventListener("click", function(){
+          var loginSection= document.getElementById("login-section");
+          loginSection.style.display= "none";
+          var transactionSection= document.getElementById("transactionSection");
+          transactionSection.style.display= "block";
+      })
+
+    </script>
 </body>
 </html>
