@@ -1,0 +1,37 @@
+.welcome-text{
+    padding-top: 50px;
+}
+.login-form{
+    margin: 40px;
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+.status{
+    margin: 0 40px;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+}
+.deposit{
+    background-color: green;
+}
+.withdraw{
+    background-color: red;
+}
+.balance{
+    background-color: orange;
+}
+.depwith-input{
+    margin: 20px;
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+#transactionSection{
+    display: none;
+    margin-top: 50px;
+}
+#messege{
+    display: none;
+}
